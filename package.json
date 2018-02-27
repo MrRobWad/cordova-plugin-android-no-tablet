@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-android-no-tablet",
+  "version": "0.0.1",
+  "description": "This plugin sets compatible-screen values to prevent Android tablet compatibility",
+  "cordova": {
+    "id": "cordova-plugin-android-no-tablet",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrRobWad/cordova-plugin-android-no-tablet.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.1.0"
+    }
+  ],
+  "author": "Robert Waddell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrRobWad/cordova-plugin-android-no-tablet/issues"
+  },
+  "homepage": "https://github.com/MrRobWad/cordova-plugin-android-no-tablet#readme"
+}

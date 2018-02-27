@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-android-no-tablet" version="0.0.1">
+    <name>Cordova Android No Tablet</name>
+    <description>This plugin sets compatible-screen values to prevent Android tablet compatibility</description>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=6.1.0" />
+    </engines>
+    <!-- android -->
+    <platform name="android">
+        <edit-config file="AndroidManifest.xml" target="/manifest/supports-screens" mode="merge">
+            <compatible-screens>
+                <screen android:screenSize="small" android:screenDensity="ldpi" />
+                <screen android:screenSize="small" android:screenDensity="mdpi" />
+                <screen android:screenSize="small" android:screenDensity="hdpi" />
+                <screen android:screenSize="small" android:screenDensity="xhdpi" />
+                <screen android:screenSize="normal" android:screenDensity="ldpi" />
+                <screen android:screenSize="normal" android:screenDensity="mdpi" />
+                <screen android:screenSize="normal" android:screenDensity="hdpi" />
+                <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+            </compatible-screens>
+        </edit-config>
+    </platform>
+</plugin>
