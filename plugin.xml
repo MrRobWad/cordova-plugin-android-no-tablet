@@ -8,13 +8,17 @@
     </engines>
     <!-- android -->
     <platform name="android">
-        <edit-config file="AndroidManifest.xml" target="/manifest/supports-screens" mode="merge">
-            <supports-screens 
-                android:smallScreens="true"
-                android:normalScreens="true" 
-                android:largeScreens="false"
-                android:xlargeScreens="false"
-                android:resizeable="false" />
+        <edit-config file="AndroidManifest.xml" target="/manifest/supports-screens" mode="overwrite">
+            <compatible-screens>
+                <screen android:screenSize="small" android:screenDensity="ldpi" />
+                <screen android:screenSize="small" android:screenDensity="mdpi" />
+                <screen android:screenSize="small" android:screenDensity="hdpi" />
+                <screen android:screenSize="small" android:screenDensity="xhdpi" />
+                <screen android:screenSize="normal" android:screenDensity="ldpi" />
+                <screen android:screenSize="normal" android:screenDensity="mdpi" />
+                <screen android:screenSize="normal" android:screenDensity="hdpi" />
+                <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+            </compatible-screens>
         </edit-config>
     </platform>
 </plugin>
