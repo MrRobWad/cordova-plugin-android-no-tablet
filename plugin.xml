@@ -9,6 +9,12 @@
     <!-- android -->
     <platform name="android">
         <edit-config file="AndroidManifest.xml" target="/manifest/supports-screens" mode="overwrite">
+            <supports-screens
+                android:smallScreens="true"
+                android:normalScreens="true"
+                android:largeScreens="false"
+                android:xlargeScreens="false"
+                android:resizeable="false" />
             <compatible-screens>
                 <screen android:screenSize="small" android:screenDensity="ldpi" />
                 <screen android:screenSize="small" android:screenDensity="mdpi" />
