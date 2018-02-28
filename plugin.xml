@@ -8,15 +8,7 @@
     </engines>
     <!-- android -->
     <platform name="android">
-        <edit-config file="AndroidManifest.xml" target="/manifest/supports-screens" mode="merge">
-            <supports-screens
-                android:smallScreens="true"
-                android:normalScreens="true"
-                android:largeScreens="false"
-                android:xlargeScreens="false"
-                android:resizeable="false" />
-        </edit-config>
-        <config-file target="AndroidManifest.xml" parent="/manifest">
+        <config-file target="AndroidManifest.xml" parent="/*">
             <compatible-screens>
                 <screen android:screenSize="small" android:screenDensity="ldpi" />
                 <screen android:screenSize="small" android:screenDensity="mdpi" />
