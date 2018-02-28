@@ -4,11 +4,11 @@
     <description>This plugin sets compatible-screen values to prevent Android tablet compatibility</description>
     <license>MIT</license>
     <engines>
-        <engine name="cordova" version=">=6.1.0" />
+        <engine name="cordova" version=">=7.0.0" />
     </engines>
     <!-- android -->
     <platform name="android">
-        <edit-config file="AndroidManifest.xml" target="/manifest/supports-screens" mode="overwrite">
+        <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/supports-screens" mode="overwrite">
             <supports-screens
                 android:smallScreens="true"
                 android:normalScreens="true"
@@ -16,7 +16,7 @@
                 android:xlargeScreens="false"
                 android:resizeable="false" />
         </edit-config>
-        <edit-config file="AndroidManifest.xml" target="/manifest/compatible-screens" mode="overwrite">
+        <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/compatible-screens" mode="overwrite">
             <compatible-screens>
                 <screen android:screenSize="small" android:screenDensity="ldpi" />
                 <screen android:screenSize="small" android:screenDensity="mdpi" />
