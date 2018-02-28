@@ -15,6 +15,8 @@
                 android:largeScreens="false"
                 android:xlargeScreens="false"
                 android:resizeable="false" />
+        </edit-config>
+        <edit-config file="AndroidManifest.xml" target="/manifest/compatible-screens" mode="overwrite">
             <compatible-screens>
                 <screen android:screenSize="small" android:screenDensity="ldpi" />
                 <screen android:screenSize="small" android:screenDensity="mdpi" />
